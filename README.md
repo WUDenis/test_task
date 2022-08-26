@@ -3,7 +3,6 @@
 The source code is in `search.py` file.
 
 ## Usage
----
 
 To install dependecies you should use [poetry](https://python-poetry.org/).
 
@@ -18,7 +17,6 @@ poetry install
 Project now is available to run and can be used.
 
 ## Mypy checking
----
 
 Command that runs type checking.
 
@@ -29,9 +27,8 @@ mypy search.py
 ![mypy checking](images/mypy_checking.png)
 
 ## Tests
----
 
-Command that runs tests/
+Command that runs tests.
 
 ```sh
 python search_test.py
