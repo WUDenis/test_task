@@ -38,3 +38,8 @@ python search_test.py
 ```
 
 ![tests](images/passed_tests.png)
+
+## Possible improvements
+
+I decided to solve the task using just loops. The algorythm has `O(n^2)` running time.
+To make it more efficient I will use trees + add performance checkups so I can be sure that performance of the code at the good level.
