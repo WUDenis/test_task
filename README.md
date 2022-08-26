@@ -28,7 +28,7 @@ mypy search.py
 
 ## Tests
 
-Command that runs tests/
+Command that runs tests.
 
 ```sh
 python search_test.py
