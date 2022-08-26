@@ -1,57 +1,40 @@
-# INSTRUCTIONS
+# Run the project
 
-In word search puzzles you get a square of letters and have to find
-specific words in them.
+The source code is in `search.py` file.
 
-For example:
+## Usage
+---
 
-```text
-jefblpepre
-camdcimgtc
-oivokprjsm
-pbwasqroua
-rixilelhrs
-wolcqlirpc
-screeaumgr
-alxhpburyi
-jalaycalmp
-clojurermt
+To install dependecies you should use [poetry](https://python-poetry.org/).
+
+
+```sh
+poetry -V
+Poetry version 1.1.14
+
+poetry install
 ```
 
-There are several programming languages hidden in the above square.
+Project now is available to run and can be used.
 
-Words can be hidden in all kinds of directions: left-to-right,
-right-to-left, vertical and diagonal.
+## Mypy checking
+---
 
-Given a puzzle and a list of words return the location of the first
-and last letter of each word.
+Command that runs type checking.
 
-
-## RULES
-
-- Keep your solution in a file named `search.py`.
-- Passing all unit tests is a plus, but not mandatory.
-- Try to show all your skills. Using linting - formatting tools,
-  preferring type checking, adding `pyproject.toml`; all of these will
-  affect your score.
-- Do not spend more than 8 hours.
-- You can send your solution in a folder with archiving it. Or if you
-  prefer to publish your solution, share the repository link with us.
-- Never pass any company name into the code. Keep it anonymous.
-
-
-## Results
-
-Mypy checking
+```sh
+mypy search.py
+```
 
 ![mypy checking](images/mypy_checking.png)
 
-Passed tests
+## Tests
+---
 
-![tests](images/passed_tests.png)
-
-Command that runs tests
+Command that runs tests/
 
 ```sh
 python search_test.py
 ```
+
+![tests](images/passed_tests.png)
