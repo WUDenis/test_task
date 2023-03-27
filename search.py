@@ -34,7 +34,7 @@ class WordSearch:
             if word_right in text:
                 return Point(len(word) - 1, i), Point(text.index(word_right), i)
 
-        return None
+        return
 
     def _search_columns(self, word: str) -> Optional[Tuple[Point, Point]]:
         for i in range(len(self.words[0])):
@@ -46,7 +46,7 @@ class WordSearch:
             if word in text_rigth:
                 return Point(i, text_rigth.index(word) - 1), Point(i, text_rigth.index(word) - len(word))
 
-        return None
+        return
 
     def _search_diagonals(self, word: str) -> Optional[Tuple[Point, Point]]:
         forward_diagonals = list(filter(lambda item: len(item) >= len(word), self.forward_diagonals))
@@ -74,10 +74,11 @@ class WordSearch:
                 coordinates = indices[text.index(word_right) : text.index(word_right) + len(word_right)]
                 return Point(*coordinates[-1]), Point(*coordinates[0])
 
-        return None
+        return
 
     def search(self, word: str) -> Optional[Tuple[Point, Point]]:
         rows_result = self._search_rows(word)
         columns_result = self._search_columns(word)
         diagonals_result = self._search_diagonals(word)
         return rows_result or columns_result or diagonals_result
+
